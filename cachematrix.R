@@ -1,7 +1,5 @@
 ## makeCacheMetrix creates a special matrix object with a getter and setter funtcions for the matrix itself 
 ## and its inverted matrix.
-## cacheSolve checks if the given matrix has been inverted, if not it calculates it. 
-##Returns the inverted matrix in both cases. 
 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -20,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-
+## cacheSolve checks if the given matrix has been inverted, if not it calculates it. 
+##Returns the inverted matrix in both cases. 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
